@@ -14,22 +14,22 @@ Features
 
 Example usage
 =============
-public class AudioTest : MonoBehaviour
-{
-	void Start ()
+	public class AudioTest : MonoBehaviour
 	{
-		KalimbaPd.Init();
-		KalimbaPd.OpenFile("kalimbaTest.pd", "pd");
-	}
-
-	void OnGUI ()
-	{
-		if (GUI.Button (new Rect (10, 10, 100, 50), "sine_on")) 
+		void Start ()
 		{
-			KalimbaPd.SendBangToReceiver("sine_on");
+			KalimbaPd.Init();
+			KalimbaPd.OpenFile("kalimbaTest.pd", "pd");
+		}
+
+		void OnGUI ()
+		{
+			if (GUI.Button (new Rect (10, 10, 100, 50), "sine_on")) 
+			{
+				KalimbaPd.SendBangToReceiver("sine_on");
+			}
 		}
 	}
-}
 
 How to use
 ==========

@@ -36,3 +36,4 @@ android-exampleapp/.settings
 android-libpd/.settings
 *.class
 unity3d/ios-exampleapp
+android-exampleapp/customActivity.jar
