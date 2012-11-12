@@ -33,10 +33,10 @@ Example usage
 
 How to use
 ==========
-The directory "unity3d" contains a example project containing a simple pd file and some unity gui buttons to control pd.
-"ios-libpd" contains all the iOS specific source code. There is a README.txt in this directory that explains how to add it to our xcode project.
-"android-libpd" contains all necessary files to build pd jni for Android.
-"android-exampleapp" contains all necessary files to build the custom Unity-Android activity.
+* The directory "unity3d" contains a example project containing a simple pd file and some unity gui buttons to control pd.
+* "ios-libpd" contains all the iOS specific source code. There is a README.txt in this directory that explains how to add it to our xcode project.
+* "android-libpd" contains all necessary files to build pd jni for Android.
+* "android-exampleapp" contains all necessary files to build the custom Unity-Android activity.
 
 Known issues
 ============
@@ -56,10 +56,10 @@ Same license (bsd like) as pd and pd related things.
 
 Kalimba specific links
 ======================
-http://blog.tridek.com/post/31459621189/the-composers-new-role-in-game-development
-http://blog.tridek.com/post/29834155461/using-libpd-with-unity3d-on-mobile-devices-part-1
+* http://blog.tridek.com/post/31459621189/the-composers-new-role-in-game-development
+* http://blog.tridek.com/post/29834155461/using-libpd-with-unity3d-on-mobile-devices-part-1
 
 General puredata links
 ======================
-https://github.com/libpd - original source (pd, ios binding, android binding)
-http://puredata.info/ - pure data main page
+* https://github.com/libpd - original source (pd, ios binding, android binding)
+* http://puredata.info/ - pure data main page
