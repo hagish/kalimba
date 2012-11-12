@@ -1,0 +1,72 @@
+#N canvas 20 49 1721 657 10;
+#X obj 44 257 osc~ 440;
+#X obj 172 102 netreceive 32000;
+#X msg 172 131;
+#X obj 44 313 *~;
+#X obj 459 608 dac~;
+#X msg 139 330 0;
+#X obj 179 298 loadbang;
+#X msg 191 256 0.5;
+#X obj 245 221 bng 15 250 50 0 empty sine_on empty 17 7 0 10 -262144
+-1 -1;
+#X text 288 213 To hear the sine wave \, send a bang with send id "sine_on"
+via tcp. Libpd will handle this internally once deployed on iOS and
+Android.;
+#X obj 253 315 bng 15 250 50 0 empty sine_off empty 17 7 0 10 -262144
+-1 -1;
+#X text 290 315 You can turn off the sound by sending a bang to "sine_off".
+;
+#X floatatom 225 391 5 0 1 0 - volume -;
+#X text 6 209 Sine Wave Generator;
+#X text 293 103 TCP Kalimba network receiver (no more wires necessary!)
+;
+#X text 228 13 Kalimba Sinewave Test;
+#X text 49 290 Volume;
+#X floatatom 250 162 5 0 0 0 - freq -;
+#X text 284 161 Frequency Control of Sine wave: send a float to "freq"
+in Hz!);
+#X text 282 388 Alternatively \, send a float to receiver "volume"
+in the range 0-1 to define volume.;
+#X floatatom 833 458 8 0 0 0 - - -;
+#X obj 794 389 oggread~;
+#X msg 829 216 start;
+#X msg 868 272 stop;
+#X text 877 214 play file from beginning;
+#X text 910 272 stop (pause) playing;
+#X text 910 457 position in file (seconds);
+#X msg 884 296 0;
+#X msg 853 241 1;
+#X obj 853 421 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 879 421 bang at end of file;
+#X text 794 92 the absolute path gets converted into a relative one
+on the mobile platforms \, see KalimbaPLATFORM for details;
+#X obj 854 186 bng 15 250 50 0 empty startogg empty 17 7 0 10 -262144
+-1 -1;
+#X obj 734 63 loadbang;
+#X text 876 185 oggtest;
+#X text 935 20 Kalimba Ogg Test;
+#X msg 793 132 open /Users/sd/tridek-kalimba/unity3d/Assets/StreamingAssets/pd/kalimbaOggTest.ogg
+;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 3 0 4 1;
+#X connect 5 0 3 1;
+#X connect 6 0 5 0;
+#X connect 7 0 3 1;
+#X connect 8 0 7 0;
+#X connect 10 0 5 0;
+#X connect 12 0 3 1;
+#X connect 17 0 0 0;
+#X connect 21 0 4 0;
+#X connect 21 1 4 1;
+#X connect 21 2 20 0;
+#X connect 21 3 29 0;
+#X connect 22 0 21 0;
+#X connect 23 0 21 0;
+#X connect 27 0 21 0;
+#X connect 28 0 21 0;
+#X connect 32 0 22 0;
+#X connect 33 0 36 0;
+#X connect 36 0 21 0;

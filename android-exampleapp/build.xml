@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="jar">
+    <target name="jar">
+        <jar destfile="customActivity.jar" basedir="bin"></jar>
+        <copy file="customActivity.jar" tofile="../unity3d/Assets/Plugins/Android/customActivity.jar" overwrite="true" />
+        <copy file="AndroidManifest.xml" tofile="../unity3d/Assets/Plugins/Android/AndroidManifest.xml" overwrite="true" />
+    </target>
+</project>
