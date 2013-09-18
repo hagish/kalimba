@@ -59,6 +59,11 @@ Kalimba specific links
 * http://blog.tridek.com/post/31459621189/the-composers-new-role-in-game-development
 * http://blog.tridek.com/post/29834155461/using-libpd-with-unity3d-on-mobile-devices-part-1
 
+Software/Games using kalimba
+============================
+* Boinkss - http://www.noisetoysound.org.uk/boinkss.html
+* SonicScan Touch - http://www.noisetoysound.org.uk/sonicscan.html
+
 General puredata links
 ======================
 * https://github.com/libpd - original source (pd, ios binding, android binding)
