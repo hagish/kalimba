@@ -8,6 +8,8 @@ using System.Text;
 
 public class AudioTest : MonoBehaviour
 {
+	private float hSliderValue = 0.5f;
+
 	void Start ()
 	{
 		KalimbaPd.Init();
@@ -31,5 +33,10 @@ public class AudioTest : MonoBehaviour
 		{
 			KalimbaPd.SendBangToReceiver("startogg");
 		}
+
+		hSliderValue = GUI.HorizontalSlider (new Rect (10, 10+180, 100, 50), hSliderValue, 0.0f, 1.0f);
+                KalimbaPd.SendFloat(hSliderValue, "myAmp");
+
+		GUI.Label (new Rect (20, 200, 100, 50), "Volume [0..1]");
 	}
 }
