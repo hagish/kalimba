@@ -68,3 +68,4 @@ General puredata links
 ======================
 * https://github.com/libpd - original source (pd, ios binding, android binding)
 * http://puredata.info/ - pure data main page
+* https://github.com/Magicolo/uPD - A relatively complete alternative to Unity's audio engine using Pure Data and LibPD.
